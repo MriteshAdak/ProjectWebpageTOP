@@ -6,7 +6,7 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 button {
@@ -14,12 +14,14 @@ button {
     background-color: rgb(0, 141, 197);
     padding: 5px 15px;
     border-radius: 15px;
+    border: solid;
+    margin: 10px 0px;
 }
 
 #header {
     background-color: rgb(201, 187, 1);
     display: flex;
-    padding: 1em 10%;
+    padding: 1em 20%;
     align-items: center;
 }
 
@@ -39,25 +41,90 @@ button {
 #mainContainer {
     background-color: rgb(201, 187, 1);
     display: flex;
-    padding: 1em 10%;
-
+    flex-wrap: wrap;
+    padding: 1em 20%;
 }
-
-/* .content {
-    color: white;
-    display: flex;
-    flex-direction: column;
-} */
 
 .title {
     font-size: 40px;
-    /* color: white; */
+    color: white;
     font-weight: bold;
     margin-bottom: 10px;
+    max-width: 600px;
 }
 
 .description {
-    /* color: white; */
+    color: white;
     margin-bottom: 10px;
+    max-width: 600px;
 }
 
+.photo {
+    border: solid 1px white;
+    margin-left: auto;
+}
+
+#castContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 15%;
+    font-size: small;
+}
+
+.castInformation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.cast {
+    width: 200px;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.cast img {
+    height: 200px;
+    width: 200px;
+    border: solid 2px rgb(201, 187, 1);
+    border-radius: 5px;
+}
+
+#reviewContainer {
+    margin: 10% 0px;
+    padding: 0px 30%;
+    background-color: #e5e7eb;
+}
+
+.review {
+    font-size: large;
+    word-spacing: 2px;
+}
+
+.reviewer {
+    text-align: end;
+}
+
+#reminderContainer {
+    margin: 0px 20%;
+    background-color: rgb(201, 187, 1);
+    color: white;
+    font-size: small;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+#footer {
+    margin-top: 10%;
+    background-color: rgb(201, 187, 1);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    font-size: xx-small;
+    color: white;
+}
